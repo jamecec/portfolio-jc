@@ -168,8 +168,12 @@ nav li:hover {
   background-image: url("ST.PNG");
 }
 .projects p {
-  font-size: clamp(1.2rem, 0.5rem + 1vw, 3rem);
+  font-size: clamp(1.5rem, 0.5rem + 1vw, 3rem);
   text-shadow: 0.07em 0 #4d2423, 0 0.07em #4d2423, -0.07em 0 #4d2423, 0 -0.07em #4d2423;
+}
+.projects a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (min-width: 40em) {

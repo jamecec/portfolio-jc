@@ -155,12 +155,16 @@ nav{
     background-image: url('ST.PNG')
   }
   p{
-    font-size: clamp(1.2rem, .5rem + 1vw, 3rem);
+    font-size: clamp(1.5rem, .5rem + 1vw, 3rem);
     text-shadow:
         0.07em 0 $neutral-dark,
         0 0.07em $neutral-dark,
         -0.07em 0 $neutral-dark,
         0 -0.07em $neutral-dark;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
   }
 }
 @media (min-width: $media-width){
