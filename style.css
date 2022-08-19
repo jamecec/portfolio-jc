@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+  font-family: "Mulish", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: clamp(0.8rem, 1rem + 2vw, 5rem);
+}
+
+nav {
+  background-color: #4d2423;
+  font-size: clamp(0.8rem, 0.5rem + 0.8vw, 2rem);
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav li {
+  color: #faf8f5;
+  padding: 0.5em;
+}
+nav li:hover {
+  background-color: #d96c23;
+  cursor: pointer;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 2em;
+  background-color: #4d2423;
+  color: #faf8f5;
+  padding: 5em 2em 1em 2em;
+}
+.overview .contact-line {
+  font-size: clamp(1rem, 1rem + 0.8vw, 3rem);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+}
+.overview .contact-line a {
+  color: #d96c23;
+}
+.overview .contact-line a:hover {
+  transform: scale(1.2);
+}
+
+.wave-container {
+  height: 150px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wave {
+  fill: #4d2423;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  text-align: justify;
+  padding: 1em;
+  color: #4d2423;
+}
+.about ul {
+  margin-left: 2em;
+  list-style: none;
+}
+.about h2 {
+  margin: 0.5em 0;
+}
+.about h3 {
+  margin-top: 2em;
+}
+
+@media (min-width: 40em) {
+  .about {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+  }
+  h2 {
+    font-size: 1.3em;
+    margin-top: 1.5em !important;
+  }
+}
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  padding: 3em 2em 1em 2em;
+  gap: 1em;
+  background-color: #4d2423;
+  color: #faf8f5;
+}
+.projects h2 {
+  font-size: clamp(0.5rem, 1rem + 1vw, 4rem);
+}
+.projects .cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.projects .card {
+  width: 70%;
+  height: 0;
+  padding-bottom: 70%;
+  border: 1px solid #faf8f5;
+  margin-top: 2em;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+}
+.projects .card:hover {
+  background-color: #d96c23;
+  transform: scale(1.2);
+}
+.projects .card .content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  text-align: center;
+}
+.projects .IT {
+  background-image: url("IT.PNG");
+}
+.projects .PC {
+  background-image: url("PC.PNG");
+}
+.projects .ST {
+  background-image: url("ST.PNG");
+}
+.projects p {
+  font-size: clamp(1.2rem, 0.5rem + 1vw, 3rem);
+  text-shadow: 0.07em 0 #4d2423, 0 0.07em #4d2423, -0.07em 0 #4d2423, 0 -0.07em #4d2423;
+}
+
+@media (min-width: 40em) {
+  .projects .cards {
+    flex-direction: row;
+    width: 80%;
+    gap: 3em;
+  }
+  .projects .card {
+    padding-bottom: 28%;
+  }
+}
+.references {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  text-align: justify;
+}
+.references h2 {
+  font-size: clamp(0.5rem, 1rem + 1vw, 4rem);
+  margin-bottom: 1em;
+}
+.references .ref-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.references .reference-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+.references i:hover {
+  color: #d96c23;
+  cursor: pointer;
+}
+
+@media (min-width: 40em) {
+  .ref-box {
+    flex-direction: row !important;
+    justify-content: center;
+    margin: 0 2em;
+  }
+  .ref-box i:nth-child(2) {
+    order: 3;
+  }
+  .reference-container {
+    padding: 0 2em;
+    align-items: center !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
